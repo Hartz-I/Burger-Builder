@@ -1,10 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-import classes from "./burgerIngredient.module.css";
+import classes from "./BurgerIngredient.module.css";
 
 const burgerIngredient = (props) => {
   let ingredient = null;
 
+  //switch case for differnt types of ingridients
   switch (props.type) {
     case "bread-bottom":
       ingredient = <div className={classes.BreadBottom}></div>;
@@ -13,7 +15,7 @@ const burgerIngredient = (props) => {
       ingredient = (
         <div className={classes.BreadTop}>
           <div className={classes.Seeds1}></div>
-          <div className={classes.Seeds1}></div>
+          <div className={classes.Seeds2}></div>
         </div>
       );
       break;
@@ -31,9 +33,16 @@ const burgerIngredient = (props) => {
       break;
     default:
       ingredient = null;
+      break;
   }
 
   return ingredient;
+};
+
+//previously required to convert into classbased
+//but now works on functional
+burgerIngredient.propTypes = {
+  type: PropTypes.string.isRequired,
 };
 
 export default burgerIngredient;
