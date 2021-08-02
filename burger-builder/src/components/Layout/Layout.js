@@ -2,6 +2,7 @@
 import React from "react";
 
 import Aux from "../../hoc/Auxillary";
+//npm i css-modules to install css modules
 import classes from "./Layout.module.css";
 
 const layout = (props) => {
