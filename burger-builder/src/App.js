@@ -1,16 +1,29 @@
-import logo from "./logo.svg";
-import classes from "./App.css";
+import styles from "./App.module.css";
 
 import React, { Component } from "react";
 
-import styles from "./style.module.css";
-
 class App extends Component {
-  render() {
-    const assignedClasses = [styles.red, styles.center];
+  state = {
+    btnClass: "",
+    clicked: false,
+  };
 
-    console.log(assignedClasses.join(" "));
-    return <div className={assignedClasses.join(" ")}>Hello</div>;
+  btnStyleHandler = () => {
+    const clicked = this.state.clicked;
+    this.setState({ btnClass: styles.red, clicked: !clicked });
+
+    if (this.state.clicked) {
+      this.setState({ btnClass: "" });
+    }
+  };
+  render() {
+    return (
+      <div className={styles.App}>
+        <button className={this.state.btnClass} onClick={this.btnStyleHandler}>
+          Push
+        </button>
+      </div>
+    );
   }
 }
 
