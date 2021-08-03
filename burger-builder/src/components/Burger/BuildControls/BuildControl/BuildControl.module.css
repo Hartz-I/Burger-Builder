@@ -68,19 +68,24 @@
   width: 10px;
   height: 23px;
   border: 1px solid #aa6817;
+  border-radius: 5px;
+
+  cursor: pointer;
 
   text-align: left;
 
   position: absolute;
-  left: 300px;
+  left: 255px;
 
   transition: width 0.5s;
 
-  background-color: #97510f;
-  color: rgb(255, 187, 109);
+  background-color: #d6bb22;
+  color: #5e5003;
 }
+
 .BuildControl .PricePerPiece:hover {
   width: 80px;
+  background-color: #f4d004;
 }
 
 .BuildControl .PricePerPiece .Strong {
@@ -88,7 +93,7 @@
   opacity: 0;
 }
 
-.BuildControl .PricePerPiece .Strong:hover {
+.BuildControl .PricePerPiece:hover .Strong {
   animation: fadeIn 10s 0.5s ease;
 }
 
