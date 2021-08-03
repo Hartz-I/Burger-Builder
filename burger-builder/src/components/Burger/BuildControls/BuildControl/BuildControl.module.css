@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 5px 0;
+
+  position: relative;
 }
 
 .BuildControl button {
@@ -55,4 +57,55 @@
 .BuildControl .Less:active {
   background-color: #daa927;
   color: white;
+}
+
+/*my extra works*/
+.BuildControl .PricePerPiece {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 10px;
+  height: 23px;
+  border: 1px solid #aa6817;
+
+  text-align: left;
+
+  position: absolute;
+  left: 300px;
+
+  transition: width 0.5s;
+
+  background-color: #97510f;
+  color: rgb(255, 187, 109);
+}
+.BuildControl .PricePerPiece:hover {
+  width: 80px;
+}
+
+.BuildControl .PricePerPiece .Strong {
+  font: inherit;
+  opacity: 0;
+}
+
+.BuildControl .PricePerPiece .Strong:hover {
+  animation: fadeIn 10s 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
