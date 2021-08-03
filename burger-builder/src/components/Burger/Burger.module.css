@@ -3,7 +3,7 @@
   margin: auto;
 
   height: 250px;
-  /*overflow: scroll; /* don't overflow put one after another */
+  overflow: scroll; /* don't overflow put one after another */
   /*puts a mark. will use later if propblem happens*/
   text-align: center;
   font-weight: bold;

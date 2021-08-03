@@ -86,6 +86,8 @@
   background: linear-gradient(#7f3608, #702e05);
   margin: 2% auto;
   border-radius: 15px;
+
+  animation: moveFromLeft 0.2s ease;
 }
 
 .Cheese {
@@ -94,6 +96,8 @@
   margin: 2% auto;
   background: linear-gradient(#f4d004, #d6bb22);
   border-radius: 20px;
+
+  animation: moveFromLeft 0.4s ease;
 }
 
 .Salad {
@@ -102,6 +106,8 @@
   margin: 2% auto;
   background: linear-gradient(#228c1d, #91ce50);
   border-radius: 20px;
+
+  animation: moveFromLeft 0.6s ease;
 }
 
 .Bacon {
@@ -109,4 +115,16 @@
   height: 3%;
   background: linear-gradient(#bf3813, #c45e38);
   margin: 2% auto;
+
+  animation: moveFromLeft 0.5s ease;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
