@@ -1,0 +1,116 @@
+.BuildControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+
+  position: relative;
+}
+
+.BuildControl button {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 80px;
+  border: 1px solid #aa6817;
+  cursor: pointer;
+  outline: none;
+}
+
+.BuildControl Button:disabled {
+  background-color: #ac9980;
+  border: 1px solid #7e7365;
+  color: #ccc;
+  cursor: default;
+}
+
+.BuildControl Button:hover:disabled {
+  background-color: #ac9980;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.Label {
+  padding: 10px;
+  font-weight: bold;
+  width: 80px;
+}
+
+.BuildControl .More {
+  background-color: #8f5e1e;
+  color: white;
+}
+
+.BuildControl .Less {
+  background-color: #d39952;
+  color: white;
+}
+
+.BuildControl .More:hover,
+.BuildControl .More:active {
+  background-color: #99703f;
+  color: white;
+}
+
+.BuildControl .Less:hover,
+.BuildControl .Less:active {
+  background-color: #daa927;
+  color: white;
+}
+
+/*my extra works*/
+.BuildControl .PricePerPiece {
+  display: block;
+  font: inherit;
+  padding: 5px;
+  margin: 0 5px;
+  width: 10px;
+  height: 23px;
+  border: 1px solid #aa6817;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  position: absolute;
+  left: 255px;
+
+  transition: width 0.5s;
+
+  background-color: #d6bb22;
+  color: #5e5003;
+}
+
+.BuildControl .PricePerPiece:hover {
+  width: 80px;
+  background-color: #f4d004;
+}
+
+.BuildControl .PricePerPiece .Strong {
+  font: inherit;
+  opacity: 0;
+}
+
+.BuildControl .PricePerPiece:hover .Strong {
+  animation: fadeIn 10s 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

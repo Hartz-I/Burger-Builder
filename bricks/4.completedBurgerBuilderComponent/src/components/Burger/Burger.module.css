@@ -1,0 +1,44 @@
+.Burger {
+  width: 100%;
+  margin: auto;
+
+  height: 250px;
+  overflow: scroll; /* don't overflow put one after another */
+  /*puts a mark. will use later if propblem happens*/
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  /*to hide scrollbar*/
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/*to hide scrollbar*/
+.Burger::-webkit-scrollbar {
+  display: none;
+}
+
+/*tall phones. potrait*/
+@media (min-width: 500px) and (min-height: 400px) {
+  .Burger {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+/*for mobile*/
+@media (min-width: 500px) and (min-height: 401px) {
+  .Burger {
+    width: 450px;
+    height: 400px;
+  }
+}
+
+/*for bigger screen*/
+@media (min-width: 1000px) and (min-height: 700px) {
+  .Burger {
+    width: 700px;
+    height: 600px;
+  }
+}
