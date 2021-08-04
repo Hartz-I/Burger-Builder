@@ -8,6 +8,15 @@
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
+
+  /*to hide scrollbar*/
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/*to hide scrollbar*/
+.Burger::-webkit-scrollbar {
+  display: none;
 }
 
 /*tall phones. potrait*/
