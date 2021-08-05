@@ -1,0 +1,14 @@
+.MenuButton {
+  border: 3px solid white;
+  height: 80%;
+  padding: 12px;
+  background-color: #703b09;
+  color: white;
+
+  border-radius: 5px;
+}
+
+.MenuButton:hover,
+.MenuButton:active {
+  background-color: #c06815;
+}

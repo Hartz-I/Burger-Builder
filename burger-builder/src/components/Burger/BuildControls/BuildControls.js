@@ -14,7 +14,7 @@ const buildControls = (props) => {
   return (
     <div className={classes.BuildControls}>
       <div className={classes.Price}>
-        <strong>Total Price: ${props.price.toFixed(2)}</strong>
+        <strong>Total Price: $ {props.price.toFixed(2)}</strong>
       </div>
       {controls.map((ctrl) => {
         return (
