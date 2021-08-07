@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 
 import classes from "./Modal.module.css";
-import Aux from "../../../hoc/Auxillary";
+import Aux from "../../../hoc/Auxillary/Auxillary";
 import Backdrop from "../Backdrop/Backdrop";
 
 //can use pure components but won't cuz that will do more checks than nessesary
