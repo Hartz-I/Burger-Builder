@@ -8,7 +8,10 @@ import Backdrop from "../Backdrop/Backdrop";
 //can use pure components but won't cuz that will do more checks than nessesary
 class Modal extends Component {
   shouldComponentUpdate(nextProps, nextState) {
-    if (nextProps.show !== this.props.show) {
+    if (
+      nextProps.show !== this.props.show ||
+      nextProps.children !== this.props.children //this is needed for the spinner
+    ) {
       return true;
     } else {
       return false;
