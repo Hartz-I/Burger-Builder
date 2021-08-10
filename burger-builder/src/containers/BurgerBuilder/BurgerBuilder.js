@@ -156,7 +156,7 @@ class BurgerBuilder extends Component {
     let orderSummary = null;
 
     let burger = this.state.error ? (
-      <p>Ingredients can't be broken</p>
+      <p>Ingredients can't be reached</p>
     ) : (
       <Spinner />
     );
