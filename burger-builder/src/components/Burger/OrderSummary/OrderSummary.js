@@ -6,7 +6,7 @@ import Button from "../../UI/Button/Button";
 class OrderSummary extends Component {
   //this can be a functional . made class for testing
   componentDidUpdate() {
-    console.log("[OrderSummery.js] did update");
+    //console.log("[OrderSummery.js] did update");
   }
   render() {
     const ingredientSummary = Object.keys(this.props.ingredients).map(
