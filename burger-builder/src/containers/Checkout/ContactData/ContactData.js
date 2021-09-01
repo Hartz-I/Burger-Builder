@@ -13,6 +13,11 @@ class ContactData extends Component {
     },
   };
 
+  orderHandler = (event) => {
+    event.preventDefault(); //form doesn't relode if clicked
+    console.log(this.state.ingredients);
+  };
+
   render() {
     return (
       <div className={classes.ContactData}>
@@ -44,7 +49,9 @@ class ContactData extends Component {
             placeholder="Postal Code"
           />
 
-          <Button btnType="Success">Order</Button>
+          <Button btnType="Success" clicked={this.orderHandler}>
+            Order
+          </Button>
         </form>
       </div>
     );
