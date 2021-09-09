@@ -1,13 +1,19 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import classes from "./NavigationItem.module.css";
 
 const navigationItem = (props) => {
   return (
     <li className={classes.NavigationItem} style={props.sideNavItemStyle}>
-      <a href={props.link} className={props.active ? classes.active : null}>
+      <NavLink
+        to={props.link}
+        //need it to use the unique classname for css modules
+        activeClassName={classes.active}
+        exact={props.exact}
+      >
         {props.children}
-      </a>
+      </NavLink>
     </li>
   );
 };

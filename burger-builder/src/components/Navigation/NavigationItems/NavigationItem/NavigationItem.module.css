@@ -21,6 +21,7 @@
 .NavigationItem a:hover,
 .NavigationItem a:active,
 .NavigationItem a.active {
+  /*active won't work for css modules sets unique class*/
   color: #a6e0f5;
 }
 
